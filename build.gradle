@@ -1,0 +1,28 @@
+plugins {
+    id 'org.jetbrains.intellij' version '1.0'
+    id 'org.jetbrains.kotlin.jvm' version '1.5.10'
+}
+
+group 'org.example.TemplatePlugin'
+version '1.0-SNAPSHOT'
+
+repositories {
+    mavenCentral()
+}
+
+dependencies {
+    implementation "org.jetbrains.kotlin:kotlin-stdlib"
+}
+
+// See https://github.com/JetBrains/gradle-intellij-plugin/
+intellij {
+    version '2020.3.4'
+    plugins = ['org.jetbrains.android',
+               'android',
+               'org.jetbrains.kotlin']
+    runIde {
+        '/Applications/Android Studio.app/Contents'
+    }
+
+}
+

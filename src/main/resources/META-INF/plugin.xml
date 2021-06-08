@@ -1,0 +1,25 @@
+<idea-plugin>
+    <id>org.example.TemplatePlugin</id>
+    <name>TemplatePlugin</name>
+    <vendor url="https://andyjennifer.com/">AndyJennifer</vendor>
+
+    <description><![CDATA[
+    This plugin helps you automate your everyday development by generating all necessary files for your project's architecture
+    when you are creating a new screen.<br><br>
+    ]]></description>
+
+    <!-- please see https://www.jetbrains.org/intellij/sdk/docs/basics/getting_started/plugin_compatibility.html
+         on how to target different products -->
+    <depends>org.jetbrains.android</depends>
+    <depends>org.jetbrains.kotlin</depends>
+    <depends>com.intellij.modules.java</depends>
+    <depends>com.intellij.modules.platform</depends>
+
+    <extensions defaultExtensionNs="com.intellij">
+        <!-- Add your extensions here -->
+    </extensions>
+
+    <actions>
+        <!-- Add your actions here -->
+    </actions>
+</idea-plugin>
