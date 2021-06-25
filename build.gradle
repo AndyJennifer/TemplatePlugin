@@ -15,14 +15,18 @@ dependencies {
 }
 
 // See https://github.com/JetBrains/gradle-intellij-plugin/
+
 intellij {
     version '2020.3.4'
     plugins = ['org.jetbrains.android',
                'android',
+               'java',
                'org.jetbrains.kotlin']
-    runIde {
-        '/Applications/Android Studio.app/Contents'
-    }
+    updateSinceUntilBuild = false
+}
 
+
+runIde {
+    ideDir = file('/Applications/Android Studio.app/Contents')
 }
 

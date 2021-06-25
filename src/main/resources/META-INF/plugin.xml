@@ -19,6 +19,11 @@
         <!-- Add your extensions here -->
     </extensions>
 
+    <extensions defaultExtensionNs="com.android.tools.idea.wizard.template">
+        <wizardTemplateProvider
+            implementation="com.andy.jennifer.WizardTemplateProviderImpl"/>
+    </extensions>
+
     <actions>
         <!-- Add your actions here -->
     </actions>
