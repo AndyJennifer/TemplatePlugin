@@ -1,15 +1,15 @@
-package com.andy.jennifer
+package com.andy.jennifer.ownTemplate
 
 import com.android.tools.idea.wizard.template.*
-import com.andy.jennifer.bean.Type
-import com.andy.jennifer.helper.UIInfoHelper
+import com.andy.jennifer.ownTemplate.bean.Type
+import com.andy.jennifer.ownTemplate.helper.UIInfoHelper
 import java.io.File
 
 
 /**
  * Author:  andy.xwt
  * Date:    2021/6/8 1:52 下午
- * Description:
+ * Description: 删除原有 build.gradle 文件的方式，新建一个新的 build.gradle 文件
  */
 
 val ownTemplate
@@ -22,10 +22,10 @@ val ownTemplate
         revision = 1
 
         //设置模板名称
-        name = "Config Own Template"
+        name = "Config Template By Own"
 
         //设置描述
-        description = "Config Own Template"
+        description = "Delete Old build.gradle file and Config your own build.gradle"
 
         //设置模板属于哪个菜单项
         category = Category.Activity

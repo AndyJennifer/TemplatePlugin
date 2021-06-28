@@ -1,9 +1,8 @@
-package com.andy.jennifer
+package com.andy.jennifer.ownTemplate
 
 import com.android.tools.idea.wizard.template.getMaterialComponentName
 import com.android.tools.idea.wizard.template.renderIf
-import com.andy.jennifer.bean.UiInfo
-import com.andy.jennifer.utils.renderDepends
+import com.andy.jennifer.ownTemplate.bean.UiInfo
 
 
 /**
@@ -132,6 +131,23 @@ private fun dependenciesBlock(list: List<UiInfo>, generateKotlin: Boolean) =
  
     }
     """
+
+
+
+/**
+ * 渲染依赖
+ *
+ * @param list
+ */
+fun renderDepends(list: List<UiInfo>): String {
+    val sb = StringBuilder()
+    for (info in list) {
+        info.map.filter { entry -> entry.key.value }.values.forEach {
+            sb.append("implementation ${it.type.prefixName}.${it.artifactId.replace('-', '_')}").append("\n")
+        }
+    }
+    return sb.toString()
+}
 
 
 

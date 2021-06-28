@@ -1,11 +1,9 @@
-package com.andy.jennifer.bean
+package com.andy.jennifer.ownTemplate.bean
 
 import com.android.tools.idea.wizard.template.BooleanParameter
 import com.android.tools.idea.wizard.template.CheckBoxWidget
 import com.android.tools.idea.wizard.template.LabelWidget
 import com.android.tools.idea.wizard.template.Widget
-import com.andy.jennifer.bean.Coordinate
-import com.andy.jennifer.bean.Type
 
 
 /**

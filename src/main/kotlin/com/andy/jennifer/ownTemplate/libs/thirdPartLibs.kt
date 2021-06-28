@@ -1,7 +1,7 @@
 package com.andy.jennifer.common
 
-import com.andy.jennifer.bean.Coordinate
-import com.andy.jennifer.bean.Type
+import com.andy.jennifer.ownTemplate.bean.Coordinate
+import com.andy.jennifer.ownTemplate.bean.Type
 
 
 /**
@@ -57,7 +57,5 @@ val thirdPartLibs = listOf(
         "3.14.9",
         Type.THIRD_PART_LIB,
         isCheck = true
-    ),
-
-
     )
+)

@@ -1,7 +1,7 @@
 package com.andy.jennifer.common
 
-import com.andy.jennifer.bean.Coordinate
-import com.andy.jennifer.bean.Type
+import com.andy.jennifer.ownTemplate.bean.Coordinate
+import com.andy.jennifer.ownTemplate.bean.Type
 
 /**
  * Author:  andy.xwt

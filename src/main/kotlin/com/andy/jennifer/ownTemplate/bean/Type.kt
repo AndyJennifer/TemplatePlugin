@@ -1,4 +1,4 @@
-package com.andy.jennifer.bean
+package com.andy.jennifer.ownTemplate.bean
 
 
 /**
